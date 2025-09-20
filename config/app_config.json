@@ -1,0 +1,85 @@
+{
+    "app": {
+        "name": "AI末日生存求生向导",
+        "version": "1.0.0",
+        "window_width": 1200,
+        "window_height": 800,
+        "theme": "light",
+        "language": "zh_CN"
+    },
+    "database": {
+        "path": "data/survival_guide.db",
+        "backup_enabled": true,
+        "backup_interval": 24
+    },
+    "ai": {
+        "model_type": "rule_based",
+        "current_model": "local",
+        "confidence_threshold": 0.7,
+        "max_response_length": 500,
+        "enable_learning": true,
+        "api_keys": {},
+        "model_settings": {
+            "deepseek": {
+                "temperature": 0.7,
+                "max_tokens": 4000
+            },
+            "openai": {
+                "temperature": 0.7,
+                "max_tokens": 4000
+            },
+            "claude": {
+                "temperature": 0.7,
+                "max_tokens": 4000
+            }
+        }
+    },
+    "scenarios": {
+        "current_scenario": "normal",
+        "available_scenarios": {
+            "normal": {
+                "name": "普通野外生存",
+                "description": "标准的野外生存环境",
+                "icon": "🏕️"
+            },
+            "zombie": {
+                "name": "僵尸末日",
+                "description": "僵尸病毒爆发后的世界",
+                "icon": "🧟"
+            },
+            "biochemical": {
+                "name": "生化危机",
+                "description": "生化武器泄露的危险环境",
+                "icon": "☣️"
+            },
+            "nuclear": {
+                "name": "核辐射",
+                "description": "核事故后的辐射环境",
+                "icon": "☢️"
+            },
+            "alien": {
+                "name": "外星入侵",
+                "description": "外星生物入侵地球",
+                "icon": "👽"
+            },
+            "natural_disaster": {
+                "name": "自然灾害",
+                "description": "地震、洪水等自然灾害",
+                "icon": "🌪️"
+            }
+        }
+    },
+    "ui": {
+        "font_family": "Microsoft YaHei",
+        "font_size": 12,
+        "show_tips": true,
+        "auto_save": true,
+        "animation_enabled": true
+    },
+    "features": {
+        "emergency_mode": true,
+        "offline_mode": true,
+        "voice_enabled": false,
+        "notifications": true
+    }
+}
