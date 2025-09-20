@@ -14,10 +14,10 @@
     },
     "ai": {
         "model_type": "rule_based",
-        "current_model": "local",
         "confidence_threshold": 0.7,
         "max_response_length": 500,
         "enable_learning": true,
+        "current_model": "local",
         "api_keys": {},
         "model_settings": {
             "deepseek": {
@@ -33,6 +33,19 @@
                 "max_tokens": 4000
             }
         }
+    },
+    "ui": {
+        "font_family": "Microsoft YaHei",
+        "font_size": 12,
+        "show_tips": true,
+        "auto_save": true,
+        "animation_enabled": true
+    },
+    "features": {
+        "emergency_mode": true,
+        "offline_mode": true,
+        "voice_enabled": false,
+        "notifications": true
     },
     "scenarios": {
         "current_scenario": "normal",
@@ -68,18 +81,5 @@
                 "icon": "🌪️"
             }
         }
-    },
-    "ui": {
-        "font_family": "Microsoft YaHei",
-        "font_size": 12,
-        "show_tips": true,
-        "auto_save": true,
-        "animation_enabled": true
-    },
-    "features": {
-        "emergency_mode": true,
-        "offline_mode": true,
-        "voice_enabled": false,
-        "notifications": true
     }
 }
